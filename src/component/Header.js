@@ -1,17 +1,24 @@
 import React from "react";
 
+import { Fragment } from "react";
+
+import Button from "./UI/Button";
+
+import "./Header.scss";
+
 const Header = () => {
   return (
-    <header>
-      <h1 class="header__title">Tropical Island</h1>
-      <p class="header__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-      <a href="#offers" class="header__btn btn-special-animation">
-        Poznaj oferte
-      </a>
-      <div class="white-block white-block-left"></div>
-    </header>
+    <Fragment>
+      <header className="header section">
+        <div className="shadow"></div>
+        <h1 class="header__title">Tropical Island</h1>
+        <p class="header__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <Button />
+        <div class="white-block white-block-left"></div>
+      </header>
+    </Fragment>
   );
 };
 
