@@ -1,0 +1,27 @@
+
+
+.hero-img {
+    position: relative;
+    background-image: url(../img/paradise_640.jpg);
+    text-align: center;
+    padding: 10em 2em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 45%;
+    z-index: 1;
+   
+    &__title {
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+        margin-bottom: 0.5em;
+        z-index: 3;
+    }
+
+    &__text {
+        padding: 1em 0;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        z-index: 3;
+    }
+}
