@@ -1,21 +1,27 @@
+import {  Fragment } from "react";
 import "./NavLinks.scss";
 
-const NavLinks = (props) => {
+const NavLinks = () => {
   return (
-    <ul className="nav">
-      <li>
-        <a href="/home">home</a>
-      </li>
-      <li>
-        <a href="/home">home</a>
-      </li>
-      <li>
-        <a href="/home">home</a>
-      </li>
-      <li>
-        <a href="/home">home</a>
-      </li>
-    </ul>
+    <Fragment>
+      
+      <ul className="nav">
+        <li>
+          <a className="nav__link" href="/home">
+            home
+          </a>
+        </li>
+        <li>
+          <a className="nav__link" href="/home">home</a>
+        </li>
+        <li>
+          <a className="nav__link" href="/home">home</a>
+        </li>
+        <li>
+          <a className="nav__link" href="/home">home</a>
+        </li>
+      </ul>
+    </Fragment>
   );
 };
 
