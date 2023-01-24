@@ -1,0 +1,45 @@
+.wrapper{
+    margin: 1em auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.section-heading {
+    text-align: center;
+    margin: 1.5em;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(30, 30, 212);
+    letter-spacing: 1px;
+}
+
+.dreams__box {
+    
+    .dreams__box-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 40em;
+            width: 35em;
+        }
+    }
+}
+
+.dreams {
+    &__box {
+        margin: 3em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 1.4em;
+        margin:1em 0;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.4em;
+    }
+}
