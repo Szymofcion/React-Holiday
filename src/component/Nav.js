@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <nav>
       <MobileNav />
-      <NavLinks />
+      <NavLinks  />
     </nav>
   );
 };

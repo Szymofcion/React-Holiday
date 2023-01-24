@@ -1,6 +1,6 @@
 import "./NavLinks.scss";
 
-const NavLinks = () => {
+const NavLinks = (props) => {
   return (
     <ul className="nav">
       <li>

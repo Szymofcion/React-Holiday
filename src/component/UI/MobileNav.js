@@ -1,19 +1,35 @@
 import React from "react";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Hamburger from "hamburger-react";
+import NavLiks from "./NavLinks";
 
-
-import "./Nav.scss";
+import "./MobileNav.scss";
 
 const Nav = () => {
   const [isOpen, setOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const [width, setWidth] = useState("");
 
-  const openNav = () => {};
+  const showNav = () =>{
+    setToggle(!toggle)
+    if(toggle ===true){
+      setWidth('50px')
+    }else{
+      setWidth('500px')
+    }
+  }
 
   return (
     <div className="burger">
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      <Hamburger
+        onClick={() => {
+          showNav(!setShowNav);
+        }}
+        toggled={isOpen}
+        toggle={setOpen}
+      />
+      {showNav && <NavLiks />}
     </div>
   );
 };
