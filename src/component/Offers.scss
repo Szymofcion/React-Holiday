@@ -1,0 +1,54 @@
+.offers__box{
+    margin: 1em;
+}
+.offers {
+    position: relative;
+    background-image: url(./img/boat_640.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__box {}
+
+    &__option {
+
+
+        &-img {
+            width: 100%;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &-info {
+            background: #fff;
+            padding: 3em;
+        }
+        &-heading {
+            margin-bottom: 0.5em;
+            font-size: 2.4rem;
+            font-weight:300px;
+        }
+        &-text {
+            margin-bottom: 0.5em;
+            font-size: 1.3rem;
+            color: black;
+          }
+          &-btn {
+            margin-top: 1em;
+            padding: 0.8em;
+            width: 100%;
+            color: #fff;
+            background-color: blue;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            &::before {
+              background-color: #fff;
+            }
+          }
+    }
+}

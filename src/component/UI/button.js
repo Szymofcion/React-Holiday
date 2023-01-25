@@ -2,9 +2,9 @@ import React from "react";
 
 import "./Button.scss";
 
-const Button = () => {
+const Button = (props) => {
   const simpleText = "poznaj oferte";
-
+  const choose = "wybierz";
   return <a className="button">{simpleText}</a>;
 };
 
