@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+   
+
+    .person-img {
+       
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+      margin: auto;
+    }
+}

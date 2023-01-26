@@ -1,43 +1,36 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Api from "../api-comments/Api";
+import Osoba from "../img/Opinie2_1920.jpg";
 
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Slick.scss";
 
 export default class AutoPlay extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       speed: 2000,
       autoplaySpeed: 2000,
-      cssEase: "linear"
+      cssEase: "linear",
     };
+
+    const name = "Jakaś Osoba";
+    const img = Osoba;
     return (
       <div>
-        <h2>Auto Play</h2>
+        <h2 className="section-heading">Opinie</h2>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+          <Api name={name} img={Osoba} />
+          <Api name={name} img={Osoba} />
+          <Api name={name} img={Osoba} /> 
+          <Api name={name} img={Osoba} />
+          <Api name={name} img={Osoba} />
         </Slider>
       </div>
     );

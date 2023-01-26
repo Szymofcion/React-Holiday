@@ -3,7 +3,7 @@ import Dreams from "./component/Dreams";
 import Beautifier from "./component/UI/Beautifier";
 import Island from "./component/Island";
 import Offers from "./component/Offers";
-import AutoPlay from './component/slick/Slick'
+import AutoPlay from "./component/slick/Slick";
 import "./App.css";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <Dreams />
       <Beautifier />
       <Island />
-      <Offers/>
-      <AutoPlay/>
-    
+      <Offers />
+      <AutoPlay />
+      <Island />
     </div>
   );
 }
