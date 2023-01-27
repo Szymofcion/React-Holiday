@@ -8,18 +8,20 @@ const Api = () => {
     await fetch("https://randomuser.me/api/")
       .then((res) => res.json())
       .then((data) => setResults(data.results));
+    console.log(results[0]);
   };
-  
+
   useEffect(() => {
     {
       generatePerson();
     }
   }, []);
+
   return (
     <div className="container">
-      <h3 className="name">{results[0].name.first}</h3>
+      {/* <h3 className="name">{results[0].name.first}</h3>
       <img className="person-img" src={results[0].picture.large} alt="" />
-      <span className="person-info">{results[0].location.country}</span>
+      <span className="person-info">{results[0].location.country}</span> */}
     </div>
   );
 };

@@ -15,7 +15,7 @@ export default class AutoPlay extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
+      speed: 4000,
       autoplaySpeed: 2000,
       cssEase: "linear",
     };
@@ -29,6 +29,12 @@ export default class AutoPlay extends Component {
           <Api />
           <Api  /> 
           <Api />
+          <Api  />
+          <Api  />
+          <Api  />
+          <Api  />
+          <Api  />
+          <Api  />
           <Api  />
         </Slider>
       </div>

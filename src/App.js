@@ -4,6 +4,7 @@ import Beautifier from "./component/UI/Beautifier";
 import Island from "./component/Island";
 import Offers from "./component/Offers";
 import AutoPlay from "./component/slick/Slick";
+import Contact from "./component/Contact";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Island />
       <Offers />
       <AutoPlay />
-      <Island />
+      <Contact />
     </div>
   );
 }
