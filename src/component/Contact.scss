@@ -1,0 +1,44 @@
+.wrapper {
+    margin: 0 auto;
+
+}
+
+.contact {
+    margin: 0 2em;
+}
+
+.contact__form {
+    &-top {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-label {
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0.7em 0;
+    }
+
+    &-input {
+        height: 2.5em;
+        border-radius: 14px;
+    }
+
+    &-textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 150px;
+    }
+
+    &-btn {
+        margin-top: 1em;
+        padding: 0.8em;
+        width: 100%;
+        color: #fff;
+        background-color: blue;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
