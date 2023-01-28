@@ -30,6 +30,8 @@
         margin: 3em;
         display: flex;
         flex-direction: column;
+       
+        margin: 3  auto;
     }
 
     &__title {
@@ -39,7 +41,15 @@
     }
 
     &__text {
+      
         text-align: center;
         font-size: 1.4em;
+        max-width: 500px;
     }
 }
+@media (min-width: 768px) {
+    .dreams__box{
+        display: grid;
+    }
+}
+@media (min-width: 1200px) {}
