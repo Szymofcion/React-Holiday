@@ -8,14 +8,19 @@ const Api = () => {
     await fetch("https://randomuser.me/api/")
       .then((res) => res.json())
       .then((data) => setResults(data.results));
-    console.log(results[0]);
   };
+  // const randomSixPerson = () => {
+  //   for (setResults = 0; setResults.length < 6; setResults++) {
+  //     console.log(setResults);
+  //   }
+  // };
 
   useEffect(() => {
     {
       generatePerson();
+      
     }
-  }, []);
+  }, [generatePerson]);
 
   return (
     <div className="container">

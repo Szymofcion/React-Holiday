@@ -6,7 +6,11 @@
 .contact {
     margin: 0 2em;
 }
-
+.counter{
+    font-size: 2rem;
+    text-align: end;
+   
+}
 .contact__form {
     &-top {
         display: flex;
