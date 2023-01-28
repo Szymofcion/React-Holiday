@@ -15,9 +15,7 @@ const Contact = () => {
       <section className="contact">
         <form className="contact__form">
           <div className="contact__form-top">
-            <label className="contact__form-label" >
-              Imie i nazwisko:
-            </label>
+            <label className="contact__form-label">Imie i nazwisko:</label>
             <input className="contact__form-input" type="text" />
             <label htmlFor="email" className="contact__form-label">
               Adres e-mail:
@@ -36,9 +34,11 @@ const Contact = () => {
             onChange={messageCounter}
           />
           <p className="counter">{counter} / 150</p>
-          <button type="submit" className="contact__form-btn">
-            Wyślij
-          </button>
+          <div className="btn-form-container">
+            <button type="submit" className="contact__form-btn">
+              Wyślij
+            </button>
+          </div>
         </form>
       </section>
     </div>

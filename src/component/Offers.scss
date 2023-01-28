@@ -56,3 +56,45 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .offers{
+        background-image: url(./img/sunrise_1920.jpg);
+    }
+    .change {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .offers__box {
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    .offers__option-heading {
+        font-size: 3rem;
+    }
+
+    .offers__option-img {
+        width: 100%;
+    }
+
+    .offers__option-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+
+        .offers__option-text {
+            font-size: 1.5rem;
+            width: 78%;
+        }
+
+        .offers__option-btn {
+            width: 80%;
+            font-size: 1.5rem;
+        }
+
+    }
+}

@@ -1,16 +1,16 @@
 .wrapper {
     margin: 0 auto;
-
 }
 
 .contact {
     margin: 0 2em;
 }
-.counter{
+
+.counter {
     font-size: 2rem;
     text-align: end;
-   
 }
+
 .contact__form {
     &-top {
         display: flex;
@@ -26,13 +26,18 @@
 
     &-input {
         height: 2.5em;
-        border-radius: 14px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(223, 223, 223);
     }
 
     &-textarea {
         max-width: 100%;
         min-width: 100%;
         min-height: 150px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(223, 223, 223);
     }
 
     &-btn {
@@ -44,5 +49,22 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact__form-label {
+        display: flex;
+
+    }
+
+    .btn-form-container {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contact__form-btn {
+        width: 25%;
+        font-size: 1.6rem;
     }
 }

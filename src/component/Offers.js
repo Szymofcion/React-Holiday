@@ -29,7 +29,7 @@ const Offers = () => {
             </button>
           </div>
         </div>
-        <div className="offers__box">
+        <div className="offers__box change">
           <div className="offers__option">
             <img src={beach} alt="" class="offers__option-img" />
           </div>

@@ -3,7 +3,7 @@ import Dreams from "./component/Dreams";
 import Beautifier from "./component/UI/Beautifier";
 import Island from "./component/Island";
 import Offers from "./component/Offers";
-import AutoPlay from "./component/slick/Slick";
+import Slick from "./component/slick/Slick";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import "./App.css";
@@ -16,7 +16,7 @@ function App() {
       <Beautifier />
       <Island />
       <Offers />
-      <AutoPlay />
+      <Slick />
       <Contact />
       <Footer/>
     </div>

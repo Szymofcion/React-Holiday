@@ -2,6 +2,7 @@
 
 import "./Footer.scss";
 
+
 const Footer = () => {
   let data;
   const handleCurrentYear = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
     data = year;
   };
 
-  handleCurrentYear()
+  handleCurrentYear();
   return (
     <footer className="footer">
       <div className="wrapper">
@@ -23,7 +24,7 @@ const Footer = () => {
             </p>
             <div className="footer__box-social">
               <a className="footer__box-link" href="">
-                FB
+             
               </a>
               <a className="footer__box-link" href="">
                 Twitter
