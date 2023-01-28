@@ -1,8 +1,7 @@
-
 .islands {
     .shadow {
         border-radius: 8px;
-        
+
     }
 
     &__card {
@@ -79,6 +78,12 @@
 }
 
 .islands {
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     &__card {
         &-info {
             position: absolute;
@@ -93,7 +98,7 @@
             opacity: 0;
             transform: rotateY(180deg);
             transition: transform 1s, opacity 1s;
-height: 405px;
+            height: 405px;
             background-color: rgba(137, 43, 226, 0.308);
 
             &--title {
@@ -142,4 +147,30 @@ height: 405px;
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    .section-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .islands {
+        margin-top: 4em;
+        display: flex;
+        .shadow{
+            height: 90%;
+        }
+        &__cards {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        &__card {
+          margin: 1em;
+          width: 45%;
+        }
+      }
+
 }
