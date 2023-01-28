@@ -1,5 +1,3 @@
-
-
 .hero-img {
     position: relative;
     background-image: url(../img/paradise_640.jpg);
@@ -10,7 +8,7 @@
     background-attachment: fixed;
     height: 45%;
     z-index: 1;
-   
+
     &__title {
         font-size: 3rem;
         color: rgb(0, 0, 0);
@@ -25,3 +23,22 @@
         z-index: 3;
     }
 }
+
+@media (min-width: 768px) {
+    .hero-img__title {
+        color: #fff;
+        font-size: 4rem;
+    }
+
+    .hero-img__text {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .hero-img {
+        background-image: url(../img/maldives4_1920.jpg);
+        padding: 25em 10em;
+    }
+}
+
+@media (min-width: 1200px) {}
