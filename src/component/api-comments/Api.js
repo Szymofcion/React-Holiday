@@ -1,29 +1,50 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 import "./Api.scss";
 
 const Api = (props) => {
   const [results, setResults] = useState([]);
-  const generatePerson = async () => {
-    await fetch("https://randomuser.me/api/")
-      .then((res) => res.json())
-      .then((data) => setResults(data.results));
-  };
-
 
   useEffect(() => {
-    {
-      generatePerson();
-    }
-  }, [generatePerson]);
+    const controller = new AbortController();
+    const { signal } = controller;
+
+    const generatePerson = async () => {
+      const response = await fetch("https://randomuser.me/api/", {
+        signal,
+      });
+
+      if (!response.ok) {
+        return;
+      }
+
+      const data = await response.json();
+
+      if (!data?.results) {
+        return;
+      }
+
+      setResults(data.results);
+    };
+
+    generatePerson();
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
 
   return (
     <div className="container">
-      
-      {/* tutaj mam dac warunek ?  */}
-    <h3 className="name">{results[0].name.first}</h3>
-    <img className="person-img" src={results[0].picture.large} alt="" />
-    <span className="person-info">{results[0].location.country}</span>
+      {results.map(({ name, picture, location }) => (
+        <Fragment key={`${name.first}${name.last}`}>
+          <h3 className="name">{name.first}</h3>
+          <div className="container-person-img">
+            <img className="person-img" src={picture.large} alt="" />
+          </div>
+          <span className="person-info">{props.comment}</span>
+        </Fragment>
+      ))}
     </div>
   );
 };
