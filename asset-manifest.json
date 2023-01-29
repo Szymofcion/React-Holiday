@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/React-Holiday/static/css/main.64c5810f.css",
+    "main.js": "/React-Holiday/static/js/main.0419efd3.js",
+    "static/media/bora_1920.jpg": "/React-Holiday/static/media/bora_1920.5a546577be411c7cecff.jpg",
+    "static/media/maldives4_1920.jpg": "/React-Holiday/static/media/maldives4_1920.c1b43c9d42531373c4cc.jpg",
+    "static/media/sunrise_1920.jpg": "/React-Holiday/static/media/sunrise_1920.043e0beaf684b6f3e880.jpg",
+    "static/media/hawaii_640.jpg": "/React-Holiday/static/media/hawaii_640.02c22d296396f7dac63c.jpg",
+    "static/media/bora2_640.jpg": "/React-Holiday/static/media/bora2_640.99e64278fbf1dada5e14.jpg",
+    "static/media/bubbles1_640.jpg": "/React-Holiday/static/media/bubbles1_640.da21081844625e1c7dae.jpg",
+    "static/media/water_640.jpg": "/React-Holiday/static/media/water_640.43761f05b8a5e7a8d817.jpg",
+    "static/media/polynesia_640.jpg": "/React-Holiday/static/media/polynesia_640.5798fc4eec5aa1657156.jpg",
+    "static/media/paradise_640.jpg": "/React-Holiday/static/media/paradise_640.cf01e3565eaa7526f863.jpg",
+    "static/media/bora_640.jpg": "/React-Holiday/static/media/bora_640.ea5879663b59d3875323.jpg",
+    "static/media/beach3_640.jpg": "/React-Holiday/static/media/beach3_640.286cd8717d6a19126d48.jpg",
+    "static/media/boat_640.jpg": "/React-Holiday/static/media/boat_640.296dbb0555d24c8c95d5.jpg",
+    "static/media/maldives4_640.jpg": "/React-Holiday/static/media/maldives4_640.37fcd4c15231811c519f.jpg",
+    "static/media/bonfire3_640.jpg": "/React-Holiday/static/media/bonfire3_640.fa27c63b99f246406231.jpg",
+    "static/media/slick.svg": "/React-Holiday/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/React-Holiday/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/React-Holiday/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/React-Holiday/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/React-Holiday/index.html",
+    "main.64c5810f.css.map": "/React-Holiday/static/css/main.64c5810f.css.map",
+    "main.0419efd3.js.map": "/React-Holiday/static/js/main.0419efd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64c5810f.css",
+    "static/js/main.0419efd3.js"
+  ]
+}
