@@ -6,7 +6,7 @@ import "./Offers.scss";
 
 const Offers = () => {
   return (
-    <section className="offers">
+    <section className="offers" id="offers">
       <div class="white-block-beautifiler-right"></div>
       <h2 className="section-heading">Oferty</h2>
 

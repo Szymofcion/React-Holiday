@@ -1,3 +1,5 @@
+import { Route } from "react-router-dom";
+
 import Header from "./component/Header";
 import Dreams from "./component/Dreams";
 import Beautifier from "./component/UI/Beautifier";
@@ -18,7 +20,7 @@ function App() {
       <Offers />
       <Slick />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

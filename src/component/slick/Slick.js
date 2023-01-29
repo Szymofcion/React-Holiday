@@ -25,7 +25,7 @@ const Slick = (props) => {
     fourth: "Zawsze chciałem poznać wyspy covid.",
     fifth: "Nie warto brać obiadokolacji.",
   };
-  console.log(props.DUMMY_COMMENT);
+  
 
   return (
     <div>
