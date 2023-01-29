@@ -1,7 +1,11 @@
-
+import {
+  BsFacebook,
+  BsTwitter,
+  BsInstagram,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 
 import "./Footer.scss";
-
 
 const Footer = () => {
   let data;
@@ -19,23 +23,24 @@ const Footer = () => {
             <h3 className="footer__box-title">fajna ikona wakacji</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Molestias dolore odio ex consequatur optio earum, aliquam incidunt
-              voluptatibus quaerat facere?
+              Molestias dolore odio ex consequatur optio earum.
             </p>
             <div className="footer__box-social">
               <a className="footer__box-link" href="">
-             
+                <BsFacebook />
               </a>
               <a className="footer__box-link" href="">
-                Twitter
+                <BsTwitter />
               </a>
               <a className="footer__box-link" href="">
-                Instagram
+                <BsInstagram />
               </a>
             </div>
           </div>
+          <p className="number-text">
+            <BsFillTelephoneFill /> +48 643 453 344
+          </p>
           <hr />
-
           <p className="bottom-text">{data} Tropical Island</p>
         </div>
       </div>

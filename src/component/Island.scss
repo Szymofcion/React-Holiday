@@ -1,7 +1,9 @@
 .islands {
     .shadow {
         border-radius: 8px;
-
+        height: 90%;
+        opacity: 1;
+        transition: opacity 1s
     }
 
     &__card {
@@ -11,6 +13,9 @@
         perspective: 1000px;
 
         &:hover {
+            .shadow {
+                opacity: 0;
+            }
             .islands__card-img {
                 transform: rotateY(-180deg);
                 opacity: 0;
@@ -150,27 +155,31 @@
 }
 
 @media (min-width: 768px) {
-    .section-heading{
+    .section-heading {
         display: flex;
         justify-content: center;
         align-items: center;
 
     }
+
     .islands {
         margin-top: 4em;
         display: flex;
-        .shadow{
+
+        .shadow {
             height: 90%;
         }
+
         &__cards {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
+
         &__card {
-          margin: 1em;
-          width: 45%;
+            margin: 1em;
+            width: 45%;
         }
-      }
+    }
 
 }

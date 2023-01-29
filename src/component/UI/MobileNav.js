@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <div className="burger">
       <button className="btn">
-        <Hamburger toggled={isOpen} toggle={setOpen} />
+       <Hamburger toggled={isOpen} toggle={setOpen} />
         {isOpen && <NavLiks />}
       </button>
     </div>

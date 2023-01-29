@@ -5,7 +5,8 @@
 }
 
 .footer {
-    background-color: grey;
+    background-color: #2e2e2e;
+    color: #fff;
     text-align: center;
 
     &__box {
@@ -19,12 +20,14 @@
 
         &-social {
             margin: 2em 0 1em;
+            display: flex;
+            justify-content: space-around;
         }
 
         &-link {
             padding: 0 .3em;
             color: #fff;
-            font-size: 2rem;
+            font-size: 3rem;
             text-decoration: none;
             transition: color, 0.3s;
 
@@ -35,8 +38,12 @@
     }
 }
 
+.number-text {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+}
+
 .bottom-text {
     font-size: 1.2rem;
     padding-top: 2em;
 }
-

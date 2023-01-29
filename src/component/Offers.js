@@ -1,12 +1,13 @@
 import bubble from "./img/bubbles1_640.jpg";
-import bonfire from './img/bonfire3_640.jpg'
-import beach from './img/beach3_640.jpg'
+import bonfire from "./img/bonfire3_640.jpg";
+import beach from "./img/beach3_640.jpg";
 
 import "./Offers.scss";
 
 const Offers = () => {
   return (
     <section className="offers">
+      <div class="white-block-beautifiler-right"></div>
       <h2 className="section-heading">Oferty</h2>
 
       <div className="wrapper">
@@ -68,6 +69,7 @@ const Offers = () => {
           </div>
         </div>
       </div>
+      <div class="white-block-beautifiler-left"></div>
     </section>
   );
 };

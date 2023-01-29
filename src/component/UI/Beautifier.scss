@@ -1,3 +1,21 @@
+.white-block-beautifiler-left {
+    position: absolute;
+    height: 50px;
+    width: 60%;
+    background-color: #fff;
+    transform: skew(45deg);
+    left: -50px;
+    bottom: -1%;
+}
+.white-block-beautifiler-right{
+    position: absolute;
+    height: 50px;
+    width: 60%;
+    background-color: #fff;
+    transform: skew(45deg);
+    right: -50px;
+    top: -1%;
+}
 .hero-img {
     position: relative;
     background-image: url(../img/paradise_640.jpg);
@@ -41,4 +59,13 @@
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .white-block-beautifiler-left {
+        height: 50px;
+        left: -250px;
+    }
+    .white-block-beautifiler-right{
+        height: 50px;
+        right: -250px;
+    }
+}

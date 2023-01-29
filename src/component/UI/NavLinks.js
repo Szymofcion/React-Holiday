@@ -9,22 +9,22 @@ const NavLinks = () => {
       <ul className="nav">
         <li>
           <a className="nav__link" href="/Wyspy">
-            Wyspy
-          </a>
-        </li>
-        <li>
-          <a className="nav__link" href="/home">
             home
           </a>
         </li>
         <li>
           <a className="nav__link" href="/home">
-            home
+            wyspy
           </a>
         </li>
         <li>
           <a className="nav__link" href="/home">
-            home
+            oferty
+          </a>
+        </li>
+        <li>
+          <a className="nav__link" href="/home">
+            kontakt
           </a>
         </li>
       </ul>

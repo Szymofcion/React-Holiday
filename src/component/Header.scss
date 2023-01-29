@@ -6,6 +6,19 @@
 
 }
 
+.white-block {
+    position: absolute;
+    height: 55px;
+    width: 60%;
+    background-color: #fff;
+
+    &-left {
+        bottom: 19%;
+        left: -50px;
+        transform: skew(45deg);
+    }
+}
+
 .header {
     background-image: url(./img/bora_640.jpg);
     background-size: cover;
@@ -34,17 +47,25 @@
 }
 
 @media (min-width: 768px) {
+    .white-block {
+        &-left {
+            bottom: 19%;
+            left: -200px;
+            transform: skew(45deg);
+        }
+    }
+
     .header {
         background-image: url(./img/bora_1920.jpg);
+
         &__title {
             font-size: 5rem;
-           
+
         }
-    
+
         &__text {
             font-size: 2rem;
-          
+
         }
     }
 }
-

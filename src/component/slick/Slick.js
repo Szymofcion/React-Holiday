@@ -36,6 +36,8 @@ const Slick = (props) => {
         <Api comment={DUMMY_COMMENT.third} />
         <Api comment={DUMMY_COMMENT.fourth} />
         <Api comment={DUMMY_COMMENT.fifth} />
+        <Api comment={DUMMY_COMMENT.second} />
+        <Api comment={DUMMY_COMMENT.fourth} />
       </Slider>
     </div>
   );
