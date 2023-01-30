@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import Slider from "react-slick";
 import Api from "../api-comments/Api";
 
@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slick.scss";
 
-const Slick = (props) => {
+const Slick = () => {
   const settings = {
     dots: false,
     infinite: true,

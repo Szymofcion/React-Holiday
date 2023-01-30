@@ -36,7 +36,7 @@ const Api = (props) => {
 
   return (
     <div className="container">
-      {results.map(({ name, picture, location }) => (
+      {results.map(({ name, picture }) => (
         <Fragment key={`${name.first}${name.last}`}>
           <h3 className="name">{name.first}</h3>
           <div className="container-person-img">

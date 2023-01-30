@@ -1,12 +1,15 @@
-.burger{
+.burger {
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
     z-index: 3;
-    .btn{
+
+    .btn {
         background-color: rgba(255, 255, 255, 0);
         border: none;
         color: black;
+        z-index: 100;
+        position: relative;
     }
 }

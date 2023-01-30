@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Hamburger from "hamburger-react";
 import NavLiks from "./NavLinks";
 
@@ -12,9 +12,9 @@ const Nav = () => {
   return (
     <div className="burger">
       <button className="btn">
-       <Hamburger toggled={isOpen} toggle={setOpen} />
-        {isOpen && <NavLiks />}
+        <Hamburger toggled={isOpen} toggle={setOpen} />
       </button>
+      {isOpen && <NavLiks />}
     </div>
   );
 };
